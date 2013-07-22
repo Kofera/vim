@@ -186,11 +186,11 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'flazz/vim-colorschemes'
 
 " YouCompleteMe 补全配置
-let g:ycm_global_ycm_extra_conf='~/workspace/.ycm_extra_conf.py'
-let g:ycm_filetype_whitelist = { 
-		\ 'cpp': 1,
-		\ 'python': 1,
-		\}
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+"let g:ycm_filetype_whitelist = {
+"		\ 'cpp': 1,
+"		\ 'python': 1,
+"		\}
 let g:Powerline_symbols = 'fancy'
 
 "kien/rainbow_parentheses.vim 配置
