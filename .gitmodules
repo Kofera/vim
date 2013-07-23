@@ -1,0 +1,136 @@
+[submodule "vim/bundle/Better-Javascript-Indentation"]
+	path = vim/bundle/Better-Javascript-Indentation
+	url = https://github.com/vim-scripts/Better-Javascript-Indentation.git
+	ignore = dirty
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/vim-scripts/ctrlp.vim.git
+	ignore = dirty
+[submodule "vim/bundle/EasyMotion"]
+	path = vim/bundle/EasyMotion
+	url = https://github.com/vim-scripts/EasyMotion.git
+	ignore = dirty
+[submodule "vim/bundle/FencView.vim"]
+	path = vim/bundle/FencView.vim
+	url = https://github.com/vim-scripts/FencView.vim.git
+	ignore = dirty
+[submodule "vim/bundle/FuzzyFinder"]
+	path = vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+	ignore = dirty
+[submodule "vim/bundle/indentLine"]
+	path = vim/bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+	ignore = dirty
+[submodule "vim/bundle/JavaScript-Indent"]
+	path = vim/bundle/JavaScript-Indent
+	url = https://github.com/vim-scripts/JavaScript-Indent.git
+	ignore = dirty
+[submodule "vim/bundle/jsbeautify"]
+	path = vim/bundle/jsbeautify
+	url = https://github.com/vim-scripts/jsbeautify.git
+	ignore = dirty
+[submodule "vim/bundle/jslint.vim"]
+	path = vim/bundle/jslint.vim
+	url = https://github.com/vim-scripts/jslint.vim.git
+	ignore = dirty
+[submodule "vim/bundle/L9"]
+	path = vim/bundle/L9
+	url = https://github.com/vim-scripts/L9.git
+	ignore = dirty
+[submodule "vim/bundle/last_edit_marker.vim"]
+	path = vim/bundle/last_edit_marker.vim
+	url = https://github.com/vim-scripts/last_edit_marker.vim.git
+	ignore = dirty
+[submodule "vim/bundle/matchit.zip"]
+	path = vim/bundle/matchit.zip
+	url = https://github.com/vim-scripts/matchit.zip.git
+	ignore = dirty
+[submodule "vim/bundle/python-imports.vim"]
+	path = vim/bundle/python-imports.vim
+	url = https://github.com/vim-scripts/python-imports.vim.git
+	ignore = dirty
+[submodule "vim/bundle/rainbow_parentheses.vim"]
+	path = vim/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+	ignore = dirty
+[submodule "vim/bundle/ShowTrailingWhitespace"]
+	path = vim/bundle/ShowTrailingWhitespace
+	url = https://github.com/vim-scripts/ShowTrailingWhitespace.git
+	ignore = dirty
+[submodule "vim/bundle/sparkup"]
+	path = vim/bundle/sparkup
+	url = https://github.com/rstacruz/sparkup.git
+	ignore = dirty
+[submodule "vim/bundle/SQLComplete.vim"]
+	path = vim/bundle/SQLComplete.vim
+	url = https://github.com/vim-scripts/SQLComplete.vim.git
+	ignore = dirty
+[submodule "vim/bundle/synmark.vim"]
+	path = vim/bundle/synmark.vim
+	url = https://github.com/vim-scripts/synmark.vim.git
+	ignore = dirty
+[submodule "vim/bundle/Tabular"]
+	path = vim/bundle/Tabular
+	url = https://github.com/vim-scripts/Tabular.git
+	ignore = dirty
+[submodule "vim/bundle/The-NERD-Commenter"]
+	path = vim/bundle/The-NERD-Commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+	ignore = dirty
+[submodule "vim/bundle/The-NERD-tree"]
+	path = vim/bundle/The-NERD-tree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+	ignore = dirty
+[submodule "vim/bundle/UltiSnips"]
+	path = vim/bundle/UltiSnips
+	url = https://github.com/vim-scripts/UltiSnips.git
+	ignore = dirty
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
+[submodule "vim/bundle/vim-colorschemes"]
+	path = vim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+	ignore = dirty
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	ignore = dirty
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	ignore = dirty
+[submodule "vim/bundle/vim-powerline"]
+	path = vim/bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+	ignore = dirty
+[submodule "vim/bundle/Vim-Script-Updater"]
+	path = vim/bundle/Vim-Script-Updater
+	url = https://github.com/vim-scripts/Vim-Script-Updater.git
+	ignore = dirty
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = http://github.com/gmarik/vundle.git
+	ignore = dirty
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+	ignore = dirty
+[submodule "vim/bundle/YouCompleteMe/.git/modules/python/ycm/completers/cs/OmniSharpServer/config"]
+	path = vim/bundle/YouCompleteMe/.git/modules/python/ycm/completers/cs/OmniSharpServer/config
+	url = https://github.com/nosami/OmniSharpServer.git
+	ignore = dirty
+[submodule "vim/bundle/YouCompleteMe/.git/modules/python/ycm/completers/python/jedi/config"]
+	path = vim/bundle/YouCompleteMe/.git/modules/python/ycm/completers/python/jedi/config
+	url = https://github.com/davidhalter/jedi.git
+	ignore = dirty
+[submodule "vim/bundle/ZenCoding.vim"]
+	path = vim/bundle/ZenCoding.vim
+	url = https://github.com/vim-scripts/ZenCoding.vim.git
+	ignore = dirty
+[submodule "vim/bundle/_jsbeautify"]
+	path = vim/bundle/_jsbeautify
+	url = https://github.com/vim-scripts/_jsbeautify.git
+	ignore = dirty
