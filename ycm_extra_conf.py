@@ -19,11 +19,11 @@ flags = [
     'c++',
     '-I',
     '.',
-	'-I', '/usr/local/include',
-	'-I', '/usr/bin/../lib/clang/3.2/include',
-	'-I', '/usr/include',
-	'-I', '/usr/include/c++/4.7.2/i686-pc-linux-gnu',
-	'-isystem', '/usr/include/c++/4.7.2'
+    '-I', '/usr/local/include',
+    '-I', '/usr/bin/../lib/clang/3.2/include',
+    '-I', '/usr/include',
+    '-I', '/usr/include/c++/4.7.2/i686-pc-linux-gnu',
+    '-isystem', '/usr/include/c++/4.7.2'
 ]
  
 if compilation_database_folder:
