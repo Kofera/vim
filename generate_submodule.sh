@@ -23,7 +23,7 @@ do
 	DIR=`echo $file | sed 's/\/.git\/config//g'`
 	echo -e "\033[32mdealing with \033[0m" $file 
 	URL=`awk '/url = / {print $3; exit}' $file`
-	git submodule add $URL "$1/bundle"
+#	git submodule add $URL "$1/bundle"
 	echo "[submodule \"$DIR\"]" >> $OUTPUT_FILENAME
 	echo -e "\tpath = $DIR" >> $OUTPUT_FILENAME
 	echo -e "\turl = $URL" >> $OUTPUT_FILENAME

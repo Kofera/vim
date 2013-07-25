@@ -82,9 +82,9 @@
 	path = vim/bundle/The-NERD-tree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
 	ignore = dirty
-[submodule "vim/bundle/UltiSnips"]
-	path = vim/bundle/UltiSnips
-	url = https://github.com/vim-scripts/UltiSnips.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
 	ignore = dirty
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
