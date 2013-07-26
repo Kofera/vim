@@ -15,7 +15,7 @@ YouCompleteMe 插件的编译和安装
 
 1. `mkdir ~/yum_build`  
 - `cd ~/yum_build`  
-- `cmake -G "Unix Makefiles" -DUSE\_SYSTEM\_LIBCLANG=ON -DEXTERNAL\_LIBCLANG\_PATH=/usr/lib/llvm/libclang.so . ~/.vim/bundle/YouCompleteMe/cpp`  
+- `cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON -DEXTERNAL_LIBCLANG_PATH=/usr/lib/llvm/libclang.so . ~/.vim/bundle/YouCompleteMe/cpp`  
 - `make`  
 - 生成的 .so 文件会输出到 ~/.vim/bundle/YouCompleteMe/python 目录下  
 
