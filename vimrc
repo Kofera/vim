@@ -83,24 +83,37 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " -------------------------------------------------------------------------------
+set background=dark
+syntax enable
+hi clear
+if version > 580
+	if exists("syntax_on")
+		syntax reset
+	endif
+endif
+colorscheme desert 
 set noeb
 set et
 set lbr
 set sm
 set selection=inclusive
+set wildmode=longest:full
 set wildmenu
+highlight Pmenu ctermfg=0 ctermbg=3
+highlight PmenuSel ctermfg=0 ctermbg=7
 set mousemodel=popup
 set showcmd
+
 "set foldenable         "允许折叠
 "set foldmethod=manual  "手动折叠
 
 filetype plugin on		"载入文件类型插件
 filetype indent on		"为特定文件类型载入相关缩进文件
 
-"状态行显示的内容 
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}    
-" 启动显示状态行(1),总是显示状态行(2)  
-set laststatus=2    
+"状态行显示的内容
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+" 启动显示状态行(1),总是显示状态行(2)
+set laststatus=2
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set scrolloff=3
 set fenc=utf-8
@@ -113,22 +126,24 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set noexpandtab         "不要用空格代替制表符
-set smarttab            "在行和段开始处使用制表符            
+set smarttab            "在行和段开始处使用制表符
 "}
 
 set cursorline			"设置光标高亮显示
 set cursorcolumn		"光标垂直高亮
+" 设置当前行高亮
+" 注意：没有配置 ctermfg=xxx，这样做不会导致当前行内容变成同一个颜色
+hi CursorLine cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
+hi CursorColumn cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
+set textwidth=80
+set colorcolumn=+1
+:hi ColorColumn ctermbg=235 guibg=#2c2d27
 set ruler
-
-syntax enable
-let g:solarized_termcolors=256
-colorscheme desert 
 
 set number          "显示行号
 "set undofile        "无限undo
 
 set history=1000
-
 
 "相对行号，要想相对行号起作用要放在显示行号后面
 "set relativenumber
@@ -192,9 +207,6 @@ set nobackup
 set noswapfile
 
 set linespace=0
-"增强模式中的命令行自动完成操作
-set wildmenu
-set nocompatible
 "使用退格键正常处理indent,eol,start等
 set backspace=2
 
