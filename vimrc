@@ -14,6 +14,8 @@ Bundle 'ctrlp.vim'
 " 在输入()，""等需要配对的符号时，自动帮你补全剩余半个
 "Bundle 'AutoClose'
 
+Bundle 'jiangmiao/auto-pairs'
+
 " 神级插件，ZenCoding 可以让你以一种神奇而无比爽快的感觉写HTML、CSS
 Bundle 'ZenCoding.vim'
 
