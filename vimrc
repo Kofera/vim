@@ -82,6 +82,33 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" kien/rainbow_parentheses
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
+
 " -------------------------------------------------------------------------------
 set background=dark
 syntax enable
@@ -132,7 +159,7 @@ set smarttab            "在行和段开始处使用制表符
 set cursorline			"设置光标高亮显示
 set cursorcolumn		"光标垂直高亮
 " 设置当前行高亮
-" 注意：没有配置 ctermfg=xxx，这样做不会导致当前行内容变成同一个颜色
+" 注意：没有配置 ctermfg=xxx，这样做可避免当前行内容变成同一个颜色
 hi CursorLine cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
 hi CursorColumn cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
 set textwidth=80
