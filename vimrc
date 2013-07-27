@@ -54,7 +54,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'Yggdroot/indentLine'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'python-imports.vim'
+"Bundle 'python-imports.vim'
 Bundle 'last_edit_marker.vim'
 Bundle 'synmark.vim'
 Bundle 'SQLComplete.vim'
