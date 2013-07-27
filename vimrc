@@ -239,3 +239,5 @@ set linespace=0
 "使用退格键正常处理indent,eol,start等
 set backspace=2
 
+noremap! <C-A> <Home>
+inoremap <C-E> <End>
