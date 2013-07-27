@@ -68,6 +68,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'auto_compile'
 
 let g:indentLine_char = '|'
 
