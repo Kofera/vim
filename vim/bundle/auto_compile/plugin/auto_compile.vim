@@ -9,8 +9,10 @@ if exists("loaded_auto_compile")
 	finish
 endif
 
-if !has('python')
-	echoerr "auto_compile: this plugin requires +python"
+if !has( 'python' )
+	echohl WarningMsg |
+				\ echoerr "auto_compile unavailable: requires python 2.x" |
+				\echohl None
 	finish
 endif
 
