@@ -54,7 +54,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'Yggdroot/indentLine'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'python-imports.vim'
+"Bundle 'python-imports.vim'
 Bundle 'last_edit_marker.vim'
 Bundle 'synmark.vim'
 Bundle 'SQLComplete.vim'
@@ -68,8 +68,14 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'auto_compile'
 
-let g:indentLine_char = '|'
+set list
+" 下面一句最后面一定要留有一个空格
+set list listchars=tab:\¦\ 
+set expandtab
+let g:indentLine_char = '¦'
+let g:indentLine_color_term = 20
 
 " YouCompleteMe 补全配置
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
@@ -120,7 +126,7 @@ if version > 580
 		syntax reset
 	endif
 endif
-colorscheme desert 
+colorscheme desert
 set noeb
 set et
 set lbr
@@ -162,11 +168,11 @@ set cursorline			"设置光标高亮显示
 set cursorcolumn		"光标垂直高亮
 " 设置当前行高亮
 " 注意：没有配置 ctermfg=xxx，这样做可避免当前行内容变成同一个颜色
-hi CursorLine cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
-hi CursorColumn cterm=NONE ctermbg=235 guibg=Grey40 guifg=white
+hi CursorLine cterm=NONE ctermbg=239 guibg=Grey40 guifg=white
+hi CursorColumn cterm=NONE ctermbg=239 guibg=Grey40 guifg=white
 set textwidth=80
 set colorcolumn=+1
-:hi ColorColumn ctermbg=235 guibg=#2c2d27
+hi ColorColumn ctermbg=00 ctermfg=20 guibg=#2c2d27
 set ruler
 
 set number          "显示行号
