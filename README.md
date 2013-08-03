@@ -15,7 +15,8 @@ YouCompleteMe 插件的编译和安装
 
 1. `mkdir ~/yum_build`  
 - `cd ~/yum_build`  
-- `cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON -DEXTERNAL_LIBCLANG_PATH=/usr/lib/llvm/libclang.so . ~/.vim/bundle/YouCompleteMe/cpp`  
+- `cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON \
+		-DEXTERNAL_LIBCLANG_PATH=/usr/lib/llvm/libclang.so . ~/.vim/bundle/YouCompleteMe/cpp`  
 - `make`  
 - 生成的 .so 文件会输出到 ~/.vim/bundle/YouCompleteMe/python 目录下  
 
@@ -27,5 +28,5 @@ YouCompleteMe 配置
 	- 编辑 ~/.ycm\_extra\_conf.py 文件，参照模板文件修改，一个检验修改是否有效的方式是修改完后，打开一个C文件进行编辑，看是否有补全菜单出现
 -  ycm\_extra\_conf.py 模板文件配置说明
 	- -I：相当于编译时使用的 -I 参数，即指明 include 的路径
-	- -isystem：此参数也是指定 include 的路径，但比 -I 要优先考虑，所以当 -I 指定的头文件依赖其他地方的头文件时，可用该参数，模板的配置主要用于解决STL的解释问题
-	- Qt5 相比 Qt4 的模块存在变化，多了 QtWidgets，所以 Qt4 写的程序有时候在 Qt5 环境下无法编译。模板文件中前四行是指定各个模块的路径（实际不只这几个模块，这里只是为了说明问题），但是在模块内部的文件使用类似 #include <QtCore/*.h> 的格式，如果没有第五句，则解析会失败，所以，这五句能解决两个版本的头文件解析问题
+	- -isystem：此参数也是指定 include 的路径，但比 -I 要优先考虑，所以当 -I 指定的头文件依赖其他地方的头文件时，可用该参数，模板的配置主要用于解决STL的解析问题
+	- Qt5 相比 Qt4 的模块存在变化，多了 QtWidgets，所以 Qt4 写的程序有时候在 Qt5 环境下无法编译。模板文件中前四行是指定各个模块的路径（实际不只这几个模块，这里只是为了说明问题），但是在模块内部的文件使用类似 #include \<QtCore\/\*\.h\> 的格式，如果没有第五句，则解析会失败，所以，这五句能解决两个版本的头文件解析问题
