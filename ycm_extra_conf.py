@@ -20,10 +20,16 @@ flags = [
     '-I',
     '.',
     '-I', '/usr/local/include',
-    '-I', '/usr/bin/../lib/clang/3.2/include',
+    '-I', '/usr/bin/../lib/clang/3.4/include',
+    '-I', '/usr/include/x86_64-linux-gnu',
     '-I', '/usr/include',
-    '-I', '/usr/include/c++/4.7.2/i686-pc-linux-gnu',
-    '-isystem', '/usr/include/c++/4.7.2'
+	'-I', '/usr/include/c++/4.7',
+	'-I', '/opt/Qt5.1.0/5.1.0/gcc_64/include/QtWidgets',
+	'-I', '/opt/Qt5.1.0/5.1.0/gcc_64/include/QtGui',
+	'-I', '/opt/Qt5.1.0/5.1.0/gcc_64/include/QtCore',
+	'-I', '/opt/Qt5.1.0/5.1.0/gcc_64/include/QtNetwork',
+	'-I', '/opt/Qt5.1.0/5.1.0/gcc_64/include',
+    '-isystem', '/usr/include/x86_64-linux-gnu/c++/4.7'
 ]
  
 if compilation_database_folder:
