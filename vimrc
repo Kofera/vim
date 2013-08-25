@@ -19,34 +19,34 @@ Bundle 'jiangmiao/auto-pairs'
 " 神级插件，ZenCoding 可以让你以一种神奇而无比爽快的感觉写HTML、CSS
 Bundle 'ZenCoding.vim'
 
-"在()、""甚至HTML标签之间快速中转
+" 在()、""甚至HTML标签之间快速中转
 Bundle 'matchit.zip'
 
-"显示行末的空格
+" 显示行末的空格
 Bundle 'ShowTrailingWhitespace'
 
-"JS代码格式化插件
+" JS代码格式化插件
 Bundle '_jsbeautify'
 
-"用全新的方式在文档中高效的移动光标，革命性的突破
+" 用全新的方式在文档中高效的移动光标，革命性的突破
 Bundle 'EasyMotion'
 
-"自动识别文件编码
+" 自动识别文件编码
 Bundle 'FencView.vim'
 
-"必不可少，在VIM的编辑窗口树状显示文件目录
+" 必不可少，在VIM的编辑窗口树状显示文件目录
 Bundle 'The-NERD-tree'
 
-"NERD出口的快速给代码加注释插件，选中，`ctrl+h`即可注释多种语言代码
+" NERD出口的快速给代码加注释插件，选中，`ctrl+h`即可注释多种语言代码
 Bundle 'The-NERD-Commenter'
 
 " https://github.com/SirVer/ultisnips.git
 Bundle 'SirVer/ultisnips'
 
-"迄今为止最好的自动VIM自动补全插件
+" 迄今为止最好的自动VIM自动补全插件
 Bundle 'Valloric/YouCompleteMe'
 
-"让代码更加易于纵向排版，以=或,符号对齐
+" 让代码更加易于纵向排版，以=或,符号对齐
 Bundle 'Tabular'
 
 Bundle 'tpope/vim-fugitive'
@@ -145,7 +145,7 @@ set showcmd
 filetype plugin on		"载入文件类型插件
 filetype indent on		"为特定文件类型载入相关缩进文件
 
-"状态行显示的内容
+" 状态行显示的内容
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
 " 启动显示状态行(1),总是显示状态行(2)
 set laststatus=2
@@ -180,13 +180,13 @@ set number          "显示行号
 
 set history=1000
 
-"相对行号，要想相对行号起作用要放在显示行号后面
+" 相对行号，要想相对行号起作用要放在显示行号后面
 "set relativenumber
 
 "自动换行
 set wrap
 
-"GUI界面里的字体，默认有抗锯齿
+" GUI界面里的字体，默认有抗锯齿
 set guifont=Inconsolata:h15
 
 set ignorecase      "设置大小写敏感和聪明感知（小写全搜，大写完全匹配）
@@ -203,16 +203,16 @@ autocmd BufReadPost *
      \ exe "normal g`\"" |
      \ endif
 
-"让退格、空格、上下箭头遇到行首行尾时自动移到下一行(包括insert模式)
+" 让退格、空格、上下箭头遇到行首行尾时自动移到下一行(包括insert模式)
 set whichwrap=b,s,<,>,[,],h,l 
 
-"插入模式下移动
+" 插入模式下移动
 inoremap <c-n> <down>
 inoremap <c-p> <up>
 inoremap <c-f> <right>
 inoremap <c-b> <left>
 
-"修改leader键为逗号
+" 修改leader键为逗号
 let mapleader=","
 imap jj <esc>
 
@@ -220,30 +220,38 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-"修改vim的正则表达式
+" 修改vim的正则表达式
 nnoremap / /\v
 vnoremap / /\v
 
-"使用tab键来代替%进行匹配跳转
+" 使用tab键来代替%进行匹配跳转
 nnoremap <tab> %
 vnoremap <tab> %
 
 
-"设置当文件被改动时自动载入
+" 设置当文件被改动时自动载入
 set autoread
-"quickfix模式
+" quickfix模式
 autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
-"代码补全
+" 代码补全
 set completeopt=longest,menu
-"在处理未保存或只读文件的时候，弹出确认
+" 在处理未保存或只读文件的时候，弹出确认
 set confirm
-"禁止生成临时文件
+" 禁止生成临时文件
 set nobackup
 set noswapfile
 
 set linespace=0
-"使用退格键正常处理indent,eol,start等
+" 使用退格键正常处理indent,eol,start等
 set backspace=2
 
 noremap! <C-A> <Home>
 inoremap <C-E> <End>
+
+" 标签操作
+map <F7> :tabprevious<CR>
+map <F6> :tabnext<CR>
+map <C-T> :tabnew .<CR>
+imap <F7> <ESC>:tabprevious<CR>i
+imap <F6> <ESC>:tabnewxt<CR>i
+imap <C-T> <ESC>:tabnew .<CR>i
