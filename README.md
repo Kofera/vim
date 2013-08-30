@@ -10,6 +10,11 @@ vim
 - `ln -s ~/myvim/ycm_extra_conf.py ~/.ycm_extra_conf.py`
 - `ln -s ~/myvim/vim/bundle/vim-colorschemes/colors ~/myvim/vim/bundle/colors`  
 
+更新
+----
+
+在完成上述操作后，打开vim，并执行 :BundleUpdate，更新所有子仓库。
+
 YouCompleteMe 插件的编译和安装
 ------------------------------
 
